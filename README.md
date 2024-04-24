@@ -11,11 +11,15 @@ ec2 is nothimg but a virtual machine
 - public ip - we can connect to the outside of the internet with help internet gateway(IGW).
 - private ip - we can't connecting to the outside of the internet. we can connect the internet with help of NAT gateway.
 **How to setup VPN**
+  
   - **Step1: Launch the EC2 instances**
+    
     ![1](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/e17e39ea-2dd8-453b-ada0-7ed764ca5f2d)
     
   - **Step2: Choose An Amazon Machine Image**
+    
     For Step 1 “Select” the OpenVPN Access Server image, seen first below.
+    
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/faffa42d-c217-4d7e-812e-917db3a417ac)
     
 
