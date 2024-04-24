@@ -3,13 +3,20 @@
 ![1_oah2o6up-klyynaK_Tv0EA](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/adf78d82-48b6-4547-aa63-2ad09c805757)
 
 let's start ....
+
 **What is VPN?**
+
 VPN(Virtual Private Network). it is allow to access the internet with more security and privacy. When we use the VPN, Your devices send your internet traffic to the internet data is encrypted, so even if someone intercepts it, they can't read it.your ip address is hidden, making it is diffcult for the websites and Advertisers and internet service provider(ISP) to track our online activities.when we connect your public Wi-Fi network, a VPN add extra layer of security.
+
 **What is ec2 instance?**
+
 ec2 is nothimg but a virtual machine
+
 **what is difference between the public and private?**
+
 - public ip - we can connect to the outside of the internet with help internet gateway(IGW).
 - private ip - we can't connecting to the outside of the internet. we can connect the internet with help of NAT gateway.
+  
 **How to setup VPN**
   
   - **Step1: Launch the EC2 instances**
