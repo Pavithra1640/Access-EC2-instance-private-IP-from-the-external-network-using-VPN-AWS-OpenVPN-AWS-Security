@@ -34,10 +34,10 @@ ec2 is nothimg but a virtual machine
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/d9779f62-97a2-4441-892b-d5048aa31fc9)
 
   - **Step 6: Configure The Instance’s Security Groups**
-  - ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/375dd747-4d4d-4b5a-b31e-21f156a0bb53)
-  - 
+    ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/375dd747-4d4d-4b5a-b31e-21f156a0bb53)
+    
   - **Step 7: Review And Launch The EC2 Instance**
-  - 
+    
   - **Step 8: Configure Your OpenVPN Installation**
     At the moment, your VPN is public.This means that any one is able to access your server through the IP address.
     make some changes now that add some layers of security to your instance and the VPN you just installed.creating a permanent IP and private IP address.creating a user account to 
@@ -52,7 +52,7 @@ ec2 is nothimg but a virtual machine
 
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/64bf374e-15b3-42e7-901b-4bec0ce45277)
     
-  -**Step 10: SSH Into Your Instance To Initialize OpenVPN**
+  - **Step 10: SSH Into Your Instance To Initialize OpenVPN**
     ssh -i YourKey.pem openvpnas@YourElasticIP
     or
     you can use the putty
@@ -94,7 +94,7 @@ ec2 is nothimg but a virtual machine
     https://YourPrivateIP:943/admin
   
   - **Lastly — Disable SSH Access**
-  - 
+    
   - Returning to your AWS EC2 Console, select your instance. On the left side navigation panel, under “Network & Security,” select “Security Groups.”
     ![22](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/34fa796d-6953-4086-9e18-f10465d28214)
 
