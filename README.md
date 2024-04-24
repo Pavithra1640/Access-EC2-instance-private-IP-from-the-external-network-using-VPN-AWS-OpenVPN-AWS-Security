@@ -24,8 +24,10 @@ ec2 is nothimg but a virtual machine
     
 
   - **Step3: Choose An EC2 Instance Type**
+    
     Next, for Step , you will choose your EC2 instance type. Since I am the only person using my VPN, I selected the t2.micro instance, which is the free 12 month tier offered to new 
     users.
+    
     ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/ed64641f-df53-47ee-af19-cfb733974a81)
     
   - **Step4: Configure The Instance Details**
