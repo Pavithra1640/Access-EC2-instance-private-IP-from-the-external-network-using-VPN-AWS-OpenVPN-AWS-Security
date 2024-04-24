@@ -62,8 +62,7 @@ ec2 is nothing but a virtual machine
     
     At the moment, your VPN is public.This means that any one is able to access your server through the IP address.
     make some changes now that add some layers of security to your instance and the VPN you just installed.creating a permanent IP and private IP address.creating a 
-    user account to 
-    manage and access the VPN with, and turning off settings on the server which disable public connections.
+    user account to manage and access the VPN with, and turning off settings on the server which disable public connections.
     
   - **Step 9: Create An Elastic IP For Your Instance**
     
