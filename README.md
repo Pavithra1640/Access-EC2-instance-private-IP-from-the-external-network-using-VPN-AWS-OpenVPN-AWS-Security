@@ -92,9 +92,7 @@ ec2 is nothimg but a virtual machine
     
     In your browser, open a new tab and type http://YourPublicIP and hit enter.
     
-    ![acessvpn](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/df0feb5d-8afd-4df7-99c9-19ebe064c87f)
-
-   In my case, I named my user openvpn. When you’re done, hit “Go”.
+    In my case, I named my user openvpn. When you’re done, hit “Go”.
     
   - **Step 14: Logging Into Your New VPN**
     
