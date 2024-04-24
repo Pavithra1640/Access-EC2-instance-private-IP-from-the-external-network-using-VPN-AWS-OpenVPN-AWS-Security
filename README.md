@@ -1,4 +1,4 @@
-![image](https://github.com/Pavithra1640/Access-EC2-instance-private-IP-from-the-external-network-using-VPN-AWS-OpenVPN-AWS-Security/assets/165140491/ecc66998-e386-4480-b741-67e483903a36)# **Access-EC2-instance-private-IP-from-the-external-network-using-VPN-AWS-OpenVPN-AWS-Security**
+# **Access-EC2-instance-private-IP-from-the-external-network-using-VPN-AWS-OpenVPN-AWS-Security**
 
 ![1_oah2o6up-klyynaK_Tv0EA](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/adf78d82-48b6-4547-aa63-2ad09c805757)
 
