@@ -103,6 +103,7 @@ ec2 is nothing but a virtual machine
   - **Step 15: Disable Public Access To The VPN**
     
        https://YourElasticIP:943/admin
+    
     Login with your username and password. You should see this notification. Hit accept to access the admin portal for the VPN.
 
     Scroll down the bottom of the page and toggle off the admin and client web server options
