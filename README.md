@@ -31,25 +31,31 @@ ec2 is nothimg but a virtual machine
     ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/ed64641f-df53-47ee-af19-cfb733974a81)
     
   - **Step4: Configure The Instance Details**
+    
     we make some modifications to the instance that guard our VPN against accidental deletion. To do this, select the “Protect against accidental termination” option
+    
     ![1](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/cb04296b-eff1-479a-b134-03e1b0ed63b3)
 
   - **Step 5: Naming The Instance With Tags**
+    
     Okay okay, were almost done creating the instance for our VPN to run on in the cloud
     You can tag it however you’d like, but I’d recommend keeping OpenVPN in the tag value. YourNameOpenVPN, MyOpenVPN, or OpenVPN all should work fine.
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/d9779f62-97a2-4441-892b-d5048aa31fc9)
 
   - **Step 6: Configure The Instance’s Security Groups**
+    
     ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/375dd747-4d4d-4b5a-b31e-21f156a0bb53)
     
   - **Step 7: Review And Launch The EC2 Instance**
     
   - **Step 8: Configure Your OpenVPN Installation**
+    
     At the moment, your VPN is public.This means that any one is able to access your server through the IP address.
     make some changes now that add some layers of security to your instance and the VPN you just installed.creating a permanent IP and private IP address.creating a user account to 
     manage and access the VPN with, and turning off settings on the server which disable public connections.
     
   - **Step 9: Create An Elastic IP For Your Instance**
+    
     As soon as the instance is shut down, a new public IP gets assigned for the same instance. This means if we set up the VPN server with the default IP, we wont be able to access the 
     VPN if the instance is shut down. Elastic IP solves this issue and assigns a permanent IP address.
     Inside Elastic IPs, we are going to **“Allocate A New Address”** and select this our OpenVPN instance.
@@ -59,10 +65,12 @@ ec2 is nothimg but a virtual machine
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/64bf374e-15b3-42e7-901b-4bec0ce45277)
     
   - **Step 10: SSH Into Your Instance To Initialize OpenVPN**
+    
     ssh -i YourKey.pem openvpnas@YourElasticIP
     or
     you can use the putty
    - sudo chmod 600 ~/YourKey.pem
+     
   - **Step 11: Complete Initial OpenVPN Configuration Settings**
     
     ![5](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/94ec3df6-33d0-432b-b99e-8dffd80d24e5)
@@ -72,6 +80,7 @@ ec2 is nothimg but a virtual machine
      sudo passwd <your password>
     
   - **Step 13: Download OpenVPN Application For Your Computer**
+    
     In your browser, open a new tab and type http://YourPublicIP and hit enter.
     
     ![Capture](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/b82603ca-0e2d-4a5a-820d-466b91c6ceb8)
@@ -82,6 +91,7 @@ ec2 is nothimg but a virtual machine
   - ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/5bb218fd-a2d6-47fa-afe8-1ed12cd505b8)
 
   - **Step 8: Disable Public Access To The VPN**
+    
     https://YourElasticIP:943/admin
     Login with your username and password. You should see this notification. Hit accept to access the admin portal for the VPN.
 
