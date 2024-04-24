@@ -32,7 +32,8 @@ ec2 is nothing but a virtual machine
 
   - **Step3: Choose An EC2 Instance Type**
     
-    Next, for Step , you will choose your EC2 instance type. Since I am the only person using my VPN, I selected the t2.micro instance, which is the free 12 month tier offered to new 
+    Next, for Step , you will choose your EC2 instance type. Since I am the only person using my VPN, I selected the t2.micro instance, which is the free 12 month 
+    tier offered to new 
     users.
     
     ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/ed64641f-df53-47ee-af19-cfb733974a81)
@@ -60,12 +61,14 @@ ec2 is nothing but a virtual machine
   - **Step 8: Configure Your OpenVPN Installation**
     
     At the moment, your VPN is public.This means that any one is able to access your server through the IP address.
-    make some changes now that add some layers of security to your instance and the VPN you just installed.creating a permanent IP and private IP address.creating a user account to 
+    make some changes now that add some layers of security to your instance and the VPN you just installed.creating a permanent IP and private IP address.creating a 
+    user account to 
     manage and access the VPN with, and turning off settings on the server which disable public connections.
     
   - **Step 9: Create An Elastic IP For Your Instance**
     
-    As soon as the instance is shut down, a new public IP gets assigned for the same instance. This means if we set up the VPN server with the default IP, we wont be able to access the 
+    As soon as the instance is shut down, a new public IP gets assigned for the same instance. This means if we set up the VPN server with the default IP, we wont be 
+    able to access the 
     VPN if the instance is shut down. Elastic IP solves this issue and assigns a permanent IP address.
     Inside Elastic IPs, we are going to **“Allocate A New Address”** and select this our OpenVPN instance.
     
@@ -113,7 +116,7 @@ ec2 is nothing but a virtual machine
     
     When you hit the button, the page will break. This is a good sign, because we just successfully disabled the usage thru the public IP.
     
-  -**Step 10: Accessing The Admin Portal With The Private IP**
+  - **Step 10: Accessing The Admin Portal With The Private IP**
   
     https://YourPrivateIP:943/admin
   
@@ -123,7 +126,8 @@ ec2 is nothing but a virtual machine
     
     ![22](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/34fa796d-6953-4086-9e18-f10465d28214)
 
-  - Under the instance, there now should be a tab labeled “Inbound.” Select this tab and hit the edit button. You should now be able to delete SSH as a type by clicking the X on the 
+  - Under the instance, there now should be a tab labeled “Inbound.” Select this tab and hit the edit button. You should now be able to delete SSH as a type by 
+    clicking the X on the 
     right. Hit save to keep the changes.
     
     ![11111](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/30edbf70-be52-4124-bb13-1ca41e75d0f8)
