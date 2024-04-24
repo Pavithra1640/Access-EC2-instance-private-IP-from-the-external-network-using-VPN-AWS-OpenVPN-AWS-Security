@@ -13,9 +13,11 @@ ec2 is nothimg but a virtual machine
 **How to setup VPN**
   - **Step1: Launch the EC2 instances**
     ![1](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/e17e39ea-2dd8-453b-ada0-7ed764ca5f2d)
+    
   - **Step2: Choose An Amazon Machine Image**
     For Step 1 “Select” the OpenVPN Access Server image, seen first below.
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/faffa42d-c217-4d7e-812e-917db3a417ac)
+    
 
   - **Step3: Choose An EC2 Instance Type**
     Next, for Step , you will choose your EC2 instance type. Since I am the only person using my VPN, I selected the t2.micro instance, which is the free 12 month tier offered to new 
@@ -35,6 +37,7 @@ ec2 is nothimg but a virtual machine
   - ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/375dd747-4d4d-4b5a-b31e-21f156a0bb53)
   - 
   - **Step 7: Review And Launch The EC2 Instance**
+  - 
   - **Step 8: Configure Your OpenVPN Installation**
     At the moment, your VPN is public.This means that any one is able to access your server through the IP address.
     make some changes now that add some layers of security to your instance and the VPN you just installed.creating a permanent IP and private IP address.creating a user account to 
@@ -44,6 +47,7 @@ ec2 is nothimg but a virtual machine
     As soon as the instance is shut down, a new public IP gets assigned for the same instance. This means if we set up the VPN server with the default IP, we wont be able to access the 
     VPN if the instance is shut down. Elastic IP solves this issue and assigns a permanent IP address.
     Inside Elastic IPs, we are going to **“Allocate A New Address”** and select this our OpenVPN instance.
+    
     ![1](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/19393169-a9cb-49bf-8548-4014d71584c2)
 
     ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/64bf374e-15b3-42e7-901b-4bec0ce45277)
@@ -54,15 +58,20 @@ ec2 is nothimg but a virtual machine
     you can use the putty
    - sudo chmod 600 ~/YourKey.pem
   - **Step 11: Complete Initial OpenVPN Configuration Settings**
+    
     ![5](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/94ec3df6-33d0-432b-b99e-8dffd80d24e5)
     
   - **Step 12: Create A New User Account For Managing OpenVPN**
-    sudo passwd <your password>
+ 
+     sudo passwd <your password>
+    
   - **Step 13: Download OpenVPN Application For Your Computer**
     In your browser, open a new tab and type http://YourPublicIP and hit enter.
+    
     ![Capture](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/b82603ca-0e2d-4a5a-820d-466b91c6ceb8)
 
     In my case, I named my user openvpn. When you’re done, hit “Go”.
+    
   - **Step 7: Logging Into Your New VPN**
   - ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/5bb218fd-a2d6-47fa-afe8-1ed12cd505b8)
 
@@ -71,15 +80,21 @@ ec2 is nothimg but a virtual machine
     Login with your username and password. You should see this notification. Hit accept to access the admin portal for the VPN.
 
     Scroll down the bottom of the page and toggle off the admin and client web server options
+    
     ![3](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/227cbd15-22c7-4055-864b-4ab3e6b963b2)
 
     After this is done, hit save at the bottom. The page will update at the top to include this message. Hit “Update Running Server.”
+    
     ![11](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/e2931c5f-e9a3-4db2-b102-0a5c18fb48c3)
     
     When you hit the button, the page will break. This is a good sign, because we just successfully disabled the usage thru the public IP.
+    
   -**Step 10: Accessing The Admin Portal With The Private IP**
+  
     https://YourPrivateIP:943/admin
+  
   - **Lastly — Disable SSH Access**
+  - 
   - Returning to your AWS EC2 Console, select your instance. On the left side navigation panel, under “Network & Security,” select “Security Groups.”
     ![22](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/34fa796d-6953-4086-9e18-f10465d28214)
 
