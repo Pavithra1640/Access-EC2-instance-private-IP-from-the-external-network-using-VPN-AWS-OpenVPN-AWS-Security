@@ -92,11 +92,12 @@ ec2 is nothimg but a virtual machine
     
     In your browser, open a new tab and type http://YourPublicIP and hit enter.
     
-    ![Capture](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/b82603ca-0e2d-4a5a-820d-466b91c6ceb8)
+    ![acessvpn](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/df0feb5d-8afd-4df7-99c9-19ebe064c87f)
 
-    In my case, I named my user openvpn. When you’re done, hit “Go”.
+   In my case, I named my user openvpn. When you’re done, hit “Go”.
     
-  - **Step 7: Logging Into Your New VPN**
+  - **Step 14: Logging Into Your New VPN**
+    
   - ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/5bb218fd-a2d6-47fa-afe8-1ed12cd505b8)
 
   - **Step 8: Disable Public Access To The VPN**
@@ -121,10 +122,12 @@ ec2 is nothimg but a virtual machine
   - **Lastly — Disable SSH Access**
     
   - Returning to your AWS EC2 Console, select your instance. On the left side navigation panel, under “Network & Security,” select “Security Groups.”
+    
     ![22](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/34fa796d-6953-4086-9e18-f10465d28214)
 
   - Under the instance, there now should be a tab labeled “Inbound.” Select this tab and hit the edit button. You should now be able to delete SSH as a type by clicking the X on the 
     right. Hit save to keep the changes.
+    
     ![11111](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/30edbf70-be52-4124-bb13-1ca41e75d0f8)
     
 
