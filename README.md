@@ -10,7 +10,7 @@ VPN(Virtual Private Network). it is allow to access the internet with more secur
 
 **What is ec2 instance?**
 
-ec2 is nothimg but a virtual machine
+ec2 is nothing but a virtual machine
 
 **what is difference between the public and private?**
 
