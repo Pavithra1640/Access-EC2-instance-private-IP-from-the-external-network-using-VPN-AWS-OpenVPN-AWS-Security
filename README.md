@@ -100,7 +100,7 @@ ec2 is nothing but a virtual machine
     
   - ![2](https://github.com/Pavithra1640/Deploying-a-Portfolio-on-AWS-S3-using-GitHub-Actions-/assets/165140491/5bb218fd-a2d6-47fa-afe8-1ed12cd505b8)
 
-  - **Step 8: Disable Public Access To The VPN**
+  - **Step 15: Disable Public Access To The VPN**
     
     https://YourElasticIP:943/admin
     Login with your username and password. You should see this notification. Hit accept to access the admin portal for the VPN.
@@ -115,7 +115,7 @@ ec2 is nothing but a virtual machine
     
     When you hit the button, the page will break. This is a good sign, because we just successfully disabled the usage thru the public IP.
     
-  - **Step 10: Accessing The Admin Portal With The Private IP**
+  - **Step 16: Accessing The Admin Portal With The Private IP**
   
     https://YourPrivateIP:943/admin
   
